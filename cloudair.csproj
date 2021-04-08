@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Flights.cshtml.cs" />
+    <Compile Remove="Views\Home\Class.cs" />
+    <Compile Remove="Views\Home\Flights.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Flights.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Ticket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- ======= Book A flight Section ======= -->
+<section id="book-a-flight" class="book-a-flight">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+
+            <h2>Please select your option</h2>
+            <label class="container">
+                Business Class
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+
+            <label class="container">
+                Economy Class
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+        </div>
+
+        <form action="forms/book-a-flight.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                    <div class="validate"></div>
+                </div>
+                
+
+            </div>
+
+
+
+
+        </form>
+        <h4>
+        <label class="container">
+            Confirm
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label></h4>
+
+
+
+    </div>
+</section>

@@ -6,8 +6,6 @@
 
   <ItemGroup>
     <Compile Remove="Views\Flights.cshtml.cs" />
-    <Compile Remove="Views\Home\Class.cs" />
-    <Compile Remove="Views\Home\Flights.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -46,9 +46,15 @@ namespace cloudair.Controllers
         }
 
 
+        public IActionResult Ticket()
+        {
+            return View();
+        }
 
-
-
+        public IActionResult MyReservations()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
